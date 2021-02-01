@@ -1,0 +1,103 @@
+.table {
+   &_name {
+    font-weight: 500;
+  }
+
+  &_header, &_row {
+    display: grid;
+    padding: 15px 0;
+    grid-template-columns: 1fr 2.5fr 0.5fr 0.5fr 0.25fr;
+    column-gap: 30px;
+
+    > div:first-child {
+      padding-left: 10px;
+    }
+  }
+
+  &_header {
+    .table_icon {
+      font-size: 28px;
+    }
+  }
+
+  &_row {
+    width: 100%;
+    min-height: 50px;
+
+    &:nth-child(even) {
+      background-color: lightgray;
+    }
+  }
+
+  &_label {
+    display: none;
+  }
+
+  &_navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    & > div:first-child {
+      margin-right: 10px;
+    }
+  }
+
+  &_actions {
+    display: flex;
+    margin: 20px 0;
+    
+    button {
+      height: 30px;
+      min-width: 80px;
+
+      &:first-child  {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &_arrow {
+    .table_redirect {
+      cursor: pointer;
+      background: transparent;
+      color: transparent;
+      font-size: 24px;
+      border: 0;
+      color: black;
+    }
+  }
+
+  @media (max-width: 600px) {
+    margin: auto;
+    width: 90%;
+
+    &_header {
+      display: none;
+    }
+
+    &_row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_header, &_row {
+      > div {
+        padding: 10px;
+      }
+    }
+
+    &_label {
+      display: initial;
+    }
+
+    &_arrow {
+      display: flex;
+      justify-content: flex-end;
+  
+      .table_redirect {
+        font-size: 38px;
+      }
+    }
+  }
+}
