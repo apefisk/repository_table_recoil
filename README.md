@@ -18,3 +18,4 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 * Pagination is not optimal. It can be hard to extend the table with sorting, different offset, filtering etc
 * Styling limitations, for instance create mixin for media queries or for frequently used classes
 * CORS error when fetching data, so a workaround was to add the proxy in tsconfig. Could be solved with express server or something else.
+* Hardcoded strings could be taken out to a constants or JSON file. Could open up for i18n and different language settings
