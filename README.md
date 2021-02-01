@@ -12,6 +12,7 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 * RecoilJS
 * SCSS
 * TypeScript
+* eslint-config-airbnb-typescript-prettier
 ### Limitations and explanations
 * Table is not that reusable, could easily be solved by using a npm package. Table was in this case created to show some kind of logic
 * Pagination is not optimal. It can be hard to extend the table with sorting, different offset, filtering etc
