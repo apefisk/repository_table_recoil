@@ -58,7 +58,7 @@
   }
 
   &--arrow {
-    .table_redirect {
+    .table--redirect {
       cursor: pointer;
       background: transparent;
       color: transparent;
@@ -95,7 +95,7 @@
       display: flex;
       justify-content: flex-end;
   
-      .table_redirect {
+      .table--redirect {
         font-size: 38px;
       }
     }
