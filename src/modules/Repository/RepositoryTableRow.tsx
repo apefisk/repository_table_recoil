@@ -13,20 +13,20 @@ export default function RepositoryTableRow({
   };
 
   return (
-    <div className="table_row" key={homepage}>
-      <div className="table_name">{name}</div>
+    <div className="table--row" key={homepage}>
+      <div className="table--name">{name}</div>
       <div>{description}</div>
 
       <div>
-        <div className="table_label">Open issues:</div> {openIssues}
+        <div className="table--label">Open issues:</div> {openIssues}
       </div>
 
       <div>
-        <div className="table_label">Stargazers count:</div> {stargazersCount}
+        <div className="table--label">Stargazers count:</div> {stargazersCount}
       </div>
 
-      <div className="table_arrow">
-        <button className="table_redirect" type="button" onClick={openUrl}>
+      <div className="table--arrow">
+        <button className="table--redirect" type="button" onClick={openUrl}>
           &#8250;
         </button>
       </div>

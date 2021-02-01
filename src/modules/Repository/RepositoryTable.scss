@@ -1,9 +1,9 @@
 .table {
-   &_name {
+   &--name {
     font-weight: 500;
   }
 
-  &_header, &_row {
+  &--header, &--row {
     display: grid;
     padding: 15px 0;
     grid-template-columns: 1fr 2.5fr 0.5fr 0.5fr 0.25fr;
@@ -14,13 +14,13 @@
     }
   }
 
-  &_header {
+  &--header {
     .table_icon {
       font-size: 28px;
     }
   }
 
-  &_row {
+  &--row {
     width: 100%;
     min-height: 50px;
 
@@ -29,11 +29,11 @@
     }
   }
 
-  &_label {
+  &--label {
     display: none;
   }
 
-  &_navigation {
+  &--navigation {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -43,7 +43,7 @@
     }
   }
 
-  &_actions {
+  &--actions {
     display: flex;
     margin: 20px 0;
     
@@ -57,7 +57,7 @@
     }
   }
 
-  &_arrow {
+  &--arrow {
     .table_redirect {
       cursor: pointer;
       background: transparent;
@@ -72,26 +72,26 @@
     margin: auto;
     width: 90%;
 
-    &_header {
+    &--header {
       display: none;
     }
 
-    &_row {
+    &--row {
       display: flex;
       flex-direction: column;
     }
 
-    &_header, &_row {
+    &--header, &--row {
       > div {
         padding: 10px;
       }
     }
 
-    &_label {
+    &--label {
       display: initial;
     }
 
-    &_arrow {
+    &--arrow {
       display: flex;
       justify-content: flex-end;
   

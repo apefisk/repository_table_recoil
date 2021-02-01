@@ -73,9 +73,9 @@ export default function RepositoryTable() {
       {tableHeaders}
       {tableItems}
 
-      <div className="table_navigation">
+      <div className="table--navigation">
         {rangeComponent}
-        <div className="table_actions">
+        <div className="table--actions">
           <button
             disabled={disablePreviousButton(index)}
             type="button"
