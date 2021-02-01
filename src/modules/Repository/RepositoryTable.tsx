@@ -43,11 +43,11 @@ export default function RepositoryTable() {
   }
 
   const tableHeaders = (
-    <div className="table_header">
+    <div className="table--header">
       <BoldText>Name</BoldText>
       <BoldText>Description</BoldText>
-      <BoldText className="table_icon">Issues</BoldText>
-      <BoldText className="table_icon">Stargazers</BoldText>
+      <BoldText className="table--icon">Issues</BoldText>
+      <BoldText className="table--icon">Stargazers</BoldText>
     </div>
   );
 
