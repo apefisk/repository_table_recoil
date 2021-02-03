@@ -10,6 +10,7 @@ const getCurrentRepositories = selector({
   key: "getCurrentRepositories",
   get: async () => {
     try {
+      // Uses the proxy from tsconfig.json to avoid CORS
       const res = await fetch(
         "http://localhost:8000/repositories?q=language:javascript&sort=stars&order=desc&per_page=100"
       );
